@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+$color-1: #214E41;
+$color-2: #fff;
+
+$color-bg_button: #43806C;
+$color-placeholder: #222222;
+$color-placeholder-2: #757575;
+$color-bg-1: #E3EEED;
+$color-line: #F0A446;
+$color-line-2: #C7C7C7;
+
+
+
+$font-size: 16;
+$media-1: 980px;
+$media-2: 600px;
+$media-aboutCard-1: 1102px;
+$media-aboutCard-2: 777px;
+$media-font-title: 440px;
+$media-coverage-1: 860px;
+
+@mixin font-adaptive($weight, $size, $lh) {
+    font-weight: $weight;
+    font-size: math.div($size, $font-size) + em;
+    line-height: math.div($lh, $size) * 100%;
+}
