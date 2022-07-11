@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $(".header__burger").click(function (e) {
     $(".header__burger, .header__navigation").toggleClass("active");
+    $("body").toggleClass("lock");
   });
 
   $(".card-statistic_item").each(function () {
